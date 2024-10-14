@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="src/logo2.png" alt="Logo" height="30" class="mr-2">
+                SafeGuard
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1>Stay Prepared, Act Swiftly</h1>
+                    <p>Effortlessly track and respond to disaster-related information with our intuitive platform.
+                        Say <b>goodbye</b> to chaos and <b>hello</b> to efficient crisis management!
+                    </p>
+
+                    <div class="buttons">
+                        <a href="task.html" class="btn btn-warning demo-button">Get Started</a>
+                        <a href="about.html" class="btn btn-info learn-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="src/11-removebg-preview.png" alt="To-Do List" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart Section -->
+    <section id="features" class="features">
+        <div class="container text-center">
+            <h2>What Sets Us Apart</h2>
+            <p class="section-description">Explore how our platform stands out in disaster management.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>REAL-TIME UPDATES</h2>
+                        <p>Our platform provides timely, accurate data to ensure you're always informed during critical
+                            situations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>ADAPTIVE SOLUTIONS</h2>
+                        <p>Effortlessly manage disaster responses with features tailored for tracking, categorizing, and
+                            analyzing incidents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>COMMUNITY SUPPORT</h2>
+                        <p>We prioritize collaboration with local authorities and communities, constantly improving our
+                            platform to save lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disaster Alert System Section -->
+    <div class="container disaster-alert-system">
+        <h1 class="text-center">Disaster Alert System</h1>
+
+        <div class="row">
+            <!-- Flood Alert Section -->
+            <div class="col-md-6 mb-4">
+                <div class="alert-section">
+                    <h2>Flood Alert</h2>
+                    <form id="flood-form">
+                        <div class="form-group">
+                            <label for="flood-location">Enter your location for flood alert:</label>
+                            <input type="text" id="flood-location" class="form-control" placeholder="City or Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Check for Water Logging</button>
+                    </form>
+                    <div id="flood-result" class="mt-3"></div>
+                </div>
+            </div>
+
+            <!-- Earthquake Alert Section -->
+            <div class="col-md-6 mb-4">
+                <div class="alert-section">
+                    <h2>Earthquake Alert</h2>
+                    <form id="earthquake-form">
+                        <div class="form-group">
+                            <label for="earthquake-location">Enter your location for earthquake alert:</label>
+                            <input type="text" id="earthquake-location" class="form-control" placeholder="City or Address"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Check for Recent Earthquakes</button>
+                    </form>
+                    <div id="earthquake-result" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Storm Alert Section -->
+            <div class="col-md-6 mb-4">
+                <div class="alert-section">
+                    <h2>Storm Alert</h2>
+                    <form id="storm-form">
+                        <div class="form-group">
+                            <label for="storm-location">Enter your location for storm alert:</label>
+                            <input type="text" id="storm-location" class="form-control" placeholder="City or Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Check for Storm</button>
+                    </form>
+                    <div id="storm-result" class="mt-3"></div>
+                </div>
+            </div>
+
+            <!-- Wildfire Alert Section -->
+            <div class="col-md-6 mb-4">
+                <div class="alert-section">
+                    <h2>Wildfire Alert</h2>
+                    <form id="wildfire-form">
+                        <div class="form-group">
+                            <label for="wildfire-location">Enter your location for wildfire alert:</label>
+                            <input type="text" id="wildfire-location" class="form-control" placeholder="City or Address" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Check for Wildfire</button>
+                    </form>
+                    <div id="wildfire-result" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Educational Resources Section -->
+    <section class="section__container resources__container">
+        <h2 class="section__header">Educational Resources for Disasters</h2>
+        <div class="resources__grid">
+            <div class="resources__card">
+                <img src="src/2.jpg" alt="Earthquake Safety" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Earthquake Safety</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="earthquake">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/3.jpg" alt="Flood Preparedness" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Flood Preparedness</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="flood">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/15.jpg" alt="Wildfire Response" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Wildfire Response</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="wildfire">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/17.png" alt="Tsunami Awareness" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Tsunami Awareness</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="tsunami">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/16.jpg" alt="Hurricane Preparedness" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Hurricane Preparedness</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="hurricane">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/7.jpg" alt="Cyclone Safety" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Cyclone Safety</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="cyclone">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/Screenshot%202024-09-17%20230945.png" alt="Landslide Safety" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Landslide Safety</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="landslide">Learn More</a>
+                </div>
+            </div>
+            <div class="resources__card">
+                <img src="src/18.jpg" alt="Water Logging Preparedness" />
+                <div class="resources__content">
+                    <div class="resources__card__header">
+                        <h4>Water Logging</h4>
+                    </div>
+                    <a href="#" class="learn__button" data-resource="waterlogging">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup for Educational Resource Details -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="educationalPopup">
+        <span class="close" id="closeEducationalPopup">&times;</span>
+        <h2>Educational Resource Details</h2>
+        <p id="educationalDetails"></p>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact__container">
+        <div class="container">
+            <h2 class="section__header text-center">Contact Us</h2>
+            <p class="section-description text-center">Have questions or need help? Reach out to us, and we'll get back to you shortly!</p>
+            <div class="row">
+                <div class="col-md-6 contact_form_container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control interactive-input" id="name"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control interactive-input" id="email"
+                                placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control interactive-input" id="message" rows="4"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact_details_container">
+                    <div class="contact__details">
+                        <h4>Get in touch with us</h4>
+                        <p><i class="fa fa-envelope"></i> support@safeguard.com</p>
+                        <p><i class="fa fa-phone"></i> +1-234-567-890</p>
+                        <p><i class="fa fa-map-marker"></i> 123 Disaster Management Lane, City, Country</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 SafeGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script> <!-- Link to the external JS file -->
+</body>
+
+</html>
